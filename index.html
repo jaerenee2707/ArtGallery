@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="lightbox.css">
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <style>
+    @media (min-width: 300px) {
+      #gallery {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 445px) {
+      #gallery {
+        column-count: 1;
+      }
+
+      .title-g {
+        display: none;
+      }
+    }
+
+    @media (min-width: 600px) {
+      #gallery {
+        column-count: 3;
+      }
+    }
+
+    @media (min-width: 900px) {
+      #gallery {
+        column-count: 4;
+      }
+    }
+
+    @media (max-device-width: 800px) {
+      #gallery {
+        column-count: 2;
+      }
+
+      .text {
+        font-size: 45px;
+      }
+    }
+
+    .responsive {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div style="position: relative;  text-align: right;">
+    <span class="title-g"
+      style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-family: Arimo;">Gallery</span>
+    <form autocomplete="off" action="/action_page.php">
+      <input type="text" id="search" class="autocomplete" placeholder="Search...">
+      <span class="fa fa-search" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%);"></span>
+    </form>
+  </div>
+  </div>
+  <hr>
+
+
+  <div id="gallery"></div>
+  <div id="backOverlay" class="lightbox_backOverlay"></div>
+  <div id="lightbox" class="lightbox">
+    <div class="lightboxContent"></div>
+  </div>
+
+  
+
+  
+
+ 
+
+  
+
+  
+
+
+  <div class="clearfix"></div>
+
+
+  <script src="imagescript.js"></script>
+  <script src="galleryscript.js"></script>
+  <script src="searchscript.js"></script>
+  <script src="autocomplete.js"></script>
+  <script src="script.js"></script>
+  <script src="lightbox.js"></script>
+</body>
+
+</html>

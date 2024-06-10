@@ -1,0 +1,84 @@
+.lightbox{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 20px;
+  height: 80%;
+  background-color: #fefefe;
+  box-shadow: #171717 3px 3px;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightboxContent{
+  position: relative;
+  background-color: #fefefe;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightboxText{
+  color: black;
+  transition: all 0.5s ease;
+  text-align: center;
+}
+.lightboxText:hover{
+  margin-left:10px;
+}
+.lightboxImage{
+  height:80%;
+  text-align: center;
+}
+.lightbox_backOverlay {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Behind the modal */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: black; /* Black with opacity */
+  opacity: 50%;
+}
+
+.row div {
+  padding: 10px;
+  margin-right: 10px;
+  height: 35px;
+  width: 15%;
+  float: left;
+  cursor: pointer;
+  font-size: 8vw;
+  user-select: none;
+  text-align: center;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-7px);
+  }
+  60% {
+    transform: translateY(-4px);
+  }
+}
+
+.row div:hover {
+  animation: bounce 1s;
+}
+
+
+.heartBoxes{
+  justify-content: center;
+  text-align: center;
+  font-size: 5.5vw;
+}
+.row {
+  clear: both;
+}
